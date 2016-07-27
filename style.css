@@ -402,6 +402,11 @@ a.button:hover {
 /*--------------------------------------------------------------
 4.2 About
 --------------------------------------------------------------*/
+.about h2 {
+	text-align: center;
+	padding-top: 10px;
+}
+
 .about p {
 	text-align: center;
 	font-size: 12px;
