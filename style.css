@@ -442,9 +442,9 @@ a.button:hover {
 /*--------------------------------------------------------------
 4.3 Register
 --------------------------------------------------------------*/
-.register{
-	margin: 20px 5px;
+.registerheading{
 	text-align: center;
+	margin-top: 20px;
 	
 }
 
@@ -452,10 +452,15 @@ a.button:hover {
 	color: red;
 }
 
+.error {
+	color: red;
+	text-align: center;
+}
+
 form {
 	width: 100%;
-	margin: 5px auto;
-	padding: 20px 0px 100px 0px;
+	margin: 0px auto;
+	padding: 0px 0px 100px 0px;
 	
 }
 
@@ -477,7 +482,7 @@ input[type=text],input[type=email],input[type=tel], textarea {
 	font-family: sans serif;
 	font-size: 16px;
 	border-radius: 4px;
-	box-shadow: inset 0px 2px 3px #666, inset 0px -5px 3px #EEE	
+	box-shadow: inset 0px 2px 3px #666, inset 0px -5px 3px #EEE
 }
 
 input[type=submit] {
