@@ -11,7 +11,7 @@
   <meta name="description" content="Student Fitness">
   <meta name="author" content="Conor Okus">
 
-  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -34,15 +34,18 @@
 		    
 		</header> <!-- End header -->
 		
-		<p class="register">Please fill in the below form to register for Goldsmiths Bootcamp.</p>
-		<span id="mynamehint" class="hint"></span>
-		<form class="group" id="mainform">
+		<h3 class="registerheading">Register for Goldsmiths Bootcamp</h3>
+		
+		<p id="errormessage"class="error"></p>
+		
+		<form name="registerform">
 			
-			<label>Name<span class="required">*</span><input type="text" name="name" placeholder="e.g Conor Okus" required /></label>
+			<label>Full Name<span class="required">*</span><input type="text" "name" placeholder="e.g Conor Okus" required /></label>
 			
-			<label>Email<span class="required">*</span><input type="email" placeholder="ma301co@gold.ac.uk" /></label>
+			<label>Email<span class="required">*</span><input type="email" placeholder="ma301co@gold.ac.uk" required /></label>
 			
-			<label>Phone Number<span class="required">*</span><input type="tel" required  /></label>
+			
+			<label>Phone Number<span class="required">*</span><input type="tel" name="num" maxlength="11"  required  /></label>
 			
 			<label>Message<textarea></textarea></label>
 			
@@ -61,7 +64,7 @@
  </div> <!-- wrapper -->
  
  <script src="js/main.js"></script>
- 
+
 </body>
 
 </html>
