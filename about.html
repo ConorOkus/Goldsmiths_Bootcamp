@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       Remove this if you use the .htaccess -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>About</title>
-  <meta name="description" content="Student Fitness">
-  <meta name="author" content="Conor Okus">
+		<title>About</title>
+		<meta name="description" content="Student Fitness">
+		<meta name="author" content="Conor Okus">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<body id="home">
-	<div id="wrapper">	
-		<header> <!-- Start header -->
-			<a href="index.html"><img src="img/logo.png" alt="Bootcamp logo" /></a>
-			<a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-			
-		    <ul class="primary-nav"> <!-- Main navigation -->
-		        <li><a href="about.html">About</a></li>
-		        <li><a href="register.html">Register</a></li>
-		        <li><a href="testimonials.html">Testimonials</a></li>
-		        <li class="twitter"><a href="https://twitter.com/golds_bootcamp" target="_blank"><i class="fa fa-twitter"></i></a></li> 
-		        <li class="facebook"><a href="https://www.facebook.com/groups/132265520280577/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-		    </ul>
-		    
-		</header> <!-- End header -->
+	</head>
+
+	<body id="home">
+		<div id="wrapper">
+			<header>
 	
-	<section class="about"> <!-- Start first section -->
-		 
-		 <h2>About Us</h2>
-		 
-		 <img src="img/bootcamp_members.png" alt="Bootcamp members" />
-		 
-		 <p>Boot camps are a great way for those looking to lose weight, drop a clothes size, get stronger, build muscle or improve general fitness and well being. Sessions will include running, skipping, circuits, teams games and lots more. We will be looking to burn anywhere from 600-1000 calories per hour session, while working the entire body throughout. Classes are open to both males and females of all abilities.<br /><br />
+				<a href="index.html"><img src="img/logo.png" alt="Bootcamp logo" /></a>
+				<a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 
-You will have a trainer who has many years experience in the fitness industry and will be able to motivate and push you harder than you would ever do on your own.
+				<ul class="primary-nav">
+					
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="testimonials.html">Testimonials</a>
+					</li>
+					<li class="twitter">
+						<a href="https://twitter.com/golds_bootcamp" target="_blank"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li class="facebook">
+						<a href="https://www.facebook.com/groups/132265520280577/" target="_blank"><i class="fa fa-facebook"></i></a>
+					</li>
+				</ul>
 
-Workouts will be challenging, exciting and fun every time.
+			</header>
+			
 
-Classes: Monday 6pm-7pm, Goldsmiths University room RHB 300 with Conor.
-
-Wednesday 5pm-6pm, Goldsmiths University in the 'Stretch' with Conor.</p>
-
-	</section> <!-- End first section -->
+			<section class="about">
 				
-	  <footer class="main-footer">
-         
-         <p>&copy; 2016 Goldsmiths Bootcamp</p>
-         
-     </footer>
- </div> <!-- wrapper -->
- 
-<script src="js/main.js"></script>
 
-</body>
+				<h2>About Us</h2>
+
+				<img src="img/bootcamp_members.png" alt="Bootcamp members" />
+
+				<p>
+					Boot camps are a great way for those looking to lose weight, drop a clothes size, get stronger, build muscle or improve general fitness and well being. Sessions will include running, skipping, circuits, teams games and lots more. We will be looking to burn anywhere from 600-1000 calories per hour session, while working the entire body throughout. Classes are open to both males and females of all abilities.
+					<br />
+					<br />
+
+					You will have a trainer who has many years experience in the fitness industry and will be able to motivate and push you harder than you would ever do on your own.
+
+					Workouts will be challenging, exciting and fun every time.
+
+					Classes: Monday 6pm-7pm, Goldsmiths University room RHB 300 with Conor.
+
+					Wednesday 5pm-6pm, Goldsmiths University in the 'Stretch' with Conor.
+				</p>
+
+			</section>
+	
+
+			<footer class="main-footer">
+
+				<h3>Become a member</h3>
+				<p>
+					If you would like to sign up for Goldsmiths Bootcamp, please fill in the form below 
+				    and someone will get back to you with payment options.
+				</p>
+				
+				<form id="contact">
+					<div class="form-group"><input type="text" name="name" placeholder="Your Name" /></div>
+					<div class="form-group"><input type="email" name="email" placeholder="Email Address" /></div>
+					<div class="form-group"><input type="tel" name="phonenumber" placeholder="Phone Number" /></div>
+					<div class="form-group error"><p>All fields are required.</p></div>
+					<button type="submit" class="submit">Submit Membership Request</button>
+				</form>
+
+			</footer>
+
+		</div>
+		
+
+		<script src="js/main.js"></script>
+
+	</body>
 
 </html>
