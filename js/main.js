@@ -4,4 +4,22 @@ function mainMenu() {
 }
 
 
+// Form Validation
+function formValidate() {
+	
+	var name = document.memberform.name.value;
+	var email = document.memberform.email.value;
+	var phonenumber = document.memberform.name.value;
+	
+	if(name == "" || email == "" || phonenumber == "") {
+		document.getElementById("error").innerHTML = "Please fill in all the fields!"
+		return false;
+	} else {
+		document.getElementById("error").innerHTML = "Form successfully completed!"
+		return true;
+	 }
+}
+
+
+
 
