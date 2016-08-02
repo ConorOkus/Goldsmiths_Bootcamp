@@ -15,7 +15,6 @@ function formValidate() {
 		document.getElementById("error").innerHTML = "Please fill in all the fields!"
 		return false;
 	} else {
-		document.getElementById("error").innerHTML = "Form successfully completed!"
 		return true;
 	 }
 }

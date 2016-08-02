@@ -8,13 +8,13 @@
 
 	<form id="member-form" name="memberform" onsubmit="return formValidate();">
 		<div class="form-group">
-			<input type="text" name="name" placeholder="Your Name"/>
+			<input type="text" name="name" placeholder="Your Name" required/>
 		</div>
 		<div class="form-group">
-			<input type="email" name="email" placeholder="Email Address"/>
+			<input type="email" name="email" placeholder="Email Address" required/>
 		</div>
 		<div class="form-group">
-			<input type="tel" name="phonenumber" placeholder="Phone Number"/>
+			<input type="tel" name="phonenumber" placeholder="Phone Number" required/>
 		</div>
 		<span class="form-group" id="error"></span>
 		<button type="submit" class="submit">
