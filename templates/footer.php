@@ -1,3 +1,10 @@
+<?php $missing = [];
+$errors = [];
+if (isset($_POST['register'])) {
+	require_once 'process.php';
+}
+?>
+
 <footer id="member" class="main-footer">
 
 	<h3>Become a member</h3>
@@ -6,18 +13,27 @@
 		and someone will get back to you with payment options.
 	</p>
 
-	<form id="member-form" name="memberform" onsubmit="return formValidate();">
+	<form id="member-form" name="memberform" method="post">
 		<div class="form-group">
-			<input type="text" name="name" placeholder="Your Name" required/>
+			<input type="text" name="name" placeholder="Your Name"
+			<?php
+				if ($errors || $missing) {
+					echo 'value="' . htmlentities($_POST['name']) . '"';
+				} ?>
+			/>
+		</div>
+		<?php if ($missing && in_array('name', $missing)) : ?>
+		<span id="error">Please enter your name</span>
+		<?php endif; ?>
+		
+		<div class="form-group">
+			<input type="email" name="email" placeholder="Email Address"/>
 		</div>
 		<div class="form-group">
-			<input type="email" name="email" placeholder="Email Address" required/>
-		</div>
-		<div class="form-group">
-			<input type="tel" name="phonenumber" placeholder="Phone Number" required/>
+			<input type="tel" name="phonenumber" placeholder="Phone Number"/>
 		</div>
 		<span class="form-group" id="error"></span>
-		<button type="submit" class="submit">
+		<button type="submit" name="register" class="submit">
 			Submit Membership Request
 		</button>
 	</form>
