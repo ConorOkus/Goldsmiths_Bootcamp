@@ -12,7 +12,7 @@ function formValidate() {
 	var phonenumber = document.memberform.name.value;
 	
 	if(name == "" || email == "" || phonenumber == "") {
-		document.getElementById("error").innerHTML = "Please fill in all the fields!"
+		document.getElementsClassName("error").innerHTML = "Please fill in all the fields!"
 		return false;
 	} else {
 		return true;

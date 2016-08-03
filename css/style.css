@@ -361,7 +361,7 @@ a.button:hover {
 
 form * {
 	background: none;
-	color: #bd9c61;
+	/*color: #bd9c61;*/
 	
 }
 
@@ -411,6 +411,7 @@ input[type=text],input[type=email],input[type=tel]{
 	border-radius: 0;
 	padding: 0;
 	margin: 0;
+	color: white;
 	
 }
 
@@ -422,11 +423,6 @@ button:focus {
 }
 
 
-.error {
-	margin-bottom: 0;
-	display: none;
-}
-
 .submit {
 	position: relative;
 	display: inline-block;
@@ -435,7 +431,8 @@ button:focus {
 	font-size: 12px;
 	background: none;
 	border: none;
-	cursor: pointer;	
+	cursor: pointer;
+	color: #bd9c61;	
 }
 
 .submit:after {
@@ -443,6 +440,10 @@ button:focus {
 	font-style: normal;
 	padding-left: 5px;
 	/*transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);*/
+}
+
+.error {
+	color: red;
 }
 
 
