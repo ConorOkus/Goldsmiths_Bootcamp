@@ -319,14 +319,16 @@ a.button:hover {
 /*--------------------------------------------------------------
  4.2 About
  --------------------------------------------------------------*/
+.about {
+	font-size: 14px;
+}
+
 .about h2 {
 	text-align: center;
 	padding-top: 10px;
 }
 
 .about p {
-	text-align: center;
-	font-size: 12px;
 	padding-top: 20px;
 	margin: 10px;
 }
@@ -336,6 +338,8 @@ a.button:hover {
 	margin: 15px auto;
 	width: 90%;
 }
+
+
 
 @media only screen and (min-width: 1024px) {
 
@@ -352,6 +356,10 @@ a.button:hover {
 		margin: 15px auto;
 		width: 50%;
 		height: 50%;
+	}
+	
+	ul.workouts {
+		margin-left: 245px;
 	}
 }
 

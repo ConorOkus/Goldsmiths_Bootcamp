@@ -1,7 +1,9 @@
-<?php $missing = [];
+<?php
+ 
+$missing = [];
 $errors = [];
 if (isset($_POST['register'])) {
-	require_once 'process.php';
+	require_once __DIR__ . '/../includes/process.php';
 }
 ?>
 
