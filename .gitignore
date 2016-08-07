@@ -1,5 +1,5 @@
 # IDE Project File
-*.project
+/.project
 
 # Config File
-includes/config.php
+/includes/config.php
