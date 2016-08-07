@@ -1,0 +1,5 @@
+# IDE Project File
+*.project
+
+# Config File
+includes/config.php
