@@ -29,15 +29,11 @@ if (!in_array($email, $missing)) {
 if (!$errors && !$missing) {
 	require_once __DIR__ . '/config.php';
 	
-	// set up replacements for decorator plugin
+//set up replacements for decorator plugin
 $replacements = [
     $email =>
         ['#subject#' => 'Confirmation of Goldsmiths Bootcamp Registration',
-         '#name#' => "$name"],
-    'ma301@gold.ac.uk' =>
-        ['#subject#' => "Goldsmiths Bootcamp Registration for $name",
-         '#greeting#' => "Registration details for $name.",
-         '#phonenumber#' => 'Registration phone number $phonenumber']
+         '#name#' => "$name"]
 ];
 
 	try {
@@ -99,7 +95,7 @@ $html = <<<EOT
 							10px 30px; border-right: 1px solid #dbc064; border-left: 1px solid #dbc064; 
 							font-family:Arial, Helvetica, sans-serif; font-size: 16px; line-height:22px; 
 							color: #654308;">
-							Hi #name# I want to take this opportunity to welcome you to the Goldsmiths Bootcamp.
+							Hi #name#, I want to take this opportunity to welcome you to the Goldsmiths Bootcamp.
 							<br><br>
 							My name is Conor Okus and I am your main trainer, instructor and contact. 
 							I would like to give you some general information about our Bootcamp and how it 
@@ -121,6 +117,8 @@ $html = <<<EOT
 							fun and non-intimidating atmosphere. It has been proven that people are more likely to reach their fitness
 						    goals in a group environment so you will have plenty of support and help from everyone in the group. 
 						    <br /><br />
+						    To pay for your membership <a href="https://www.goldsmithssu.org/activities/sports/ourteams/bootcamp/">Click Here</a>
+						    <br /><br />
 						    Classes: Wednesday 5pm-6pm, Goldsmiths University in the “Stretch”
 						    <br /><br />
 							Annual Membership: £25
@@ -137,10 +135,7 @@ $html = <<<EOT
 							<td valign="top" class="footer" bgcolor="#000000" style="padding: 15px 20px 5px 30px; 
 							border-left: 1px solid #dbc064; border-right: 1px solid #dbc064; font-family: Arial, 
 							Helvetica, sans-serif; font-size: 16px; line-height: 22px; color: white;">
-							&copy; Goldsmiths Bootcamp. PLEASE DO NOT REPLY TO THIS MESSAGE:
-							<br><br>
-							Your <a href="#" style="color:#bd9c61;;">privacy</a> is important to us. Please use this link to <a href="#" style="color:#bd9c61;;">unsubscribe</a>.
-							<br><br>
+							&copy; Goldsmiths Bootcamp.
 							</td>
 						</tr>
 					</table>
@@ -166,10 +161,11 @@ EOT;
 	foreach ($replacements as $recipient => $values) {
 		$message->setTo($recipient);
 		$sent += $mailer->send($message, $failures);
+		
 	}
 	
-	//if both messages have been sent, redirect to relevant page
-	if ($sent == 2) {
+	//if messages has been sent, redirect to relevant page
+	if ($sent == 1) {
 	    header('Location: thanks.php');
 	    exit;
 	}
@@ -189,7 +185,5 @@ EOT;
 	}
 
 }
-
-
 
 ?>

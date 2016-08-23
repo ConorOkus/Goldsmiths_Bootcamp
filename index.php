@@ -11,7 +11,7 @@
 <section class="promo-2">
 	<h2>Sign up for Goldsmiths Bootcamp!</h2>
 	<p class="header-caption">
-		The best way to stay fit as a student. Sign up for Goldsmiths Bootcamp for only £50/year
+		The best way to stay fit as a student. Sign up for Goldsmiths Bootcamp for only £25/year
 	</p>
 	<a href="testimonials.html" class="button">Testimonials</a>
 	<a href="#member" class="button">Sign Up Now</a>
