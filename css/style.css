@@ -345,9 +345,8 @@ a.button:hover {
 
 	.about p {
 		display: block;
-		margin: 25px auto;
+		margin: 10px auto;
 		font-size: 16px;
-		padding: 20px 0px 20px 0px;
 		width: 60%;
 	}
 
