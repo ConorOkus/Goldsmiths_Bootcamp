@@ -118,7 +118,6 @@ ul.primary-nav li {
 ul.primary-nav li a {
 	display: inline-block;
 	text-align: center;
-	border: none;
 	padding: 0 30px;
 	color: #fff;
 	text-decoration: none;
@@ -128,6 +127,8 @@ ul.primary-nav li a {
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 }
+
+
 
 ul.primary-nav li a:hover, ul.primary-nav li a:focus {
 	color: #bd9c61;
@@ -146,19 +147,27 @@ ul.primary-nav li a:hover, ul.primary-nav li a:focus {
 
 	ul.primary-nav.responsive {
 		position: relative;
-		height: 175px;
+		height: 150px;
+		top: 0px;
+	    right: 0px;
+	    margin: 0 auto;
 	}
 
 	ul.primary-nav.responsive li {
 		float: none;
 		display: inline;
 		line-height: 30px;
-	}
+	} 
 
 	ul.primary-nav.responsive li a {
 		display: block;
-		text-align: left;
+		border-bottom: 1px solid grey;
+		
 	}
+	
+	ul.primary-nav li:last-child a {
+		border-bottom: none;
+    } 
 
 	/*ul.primary-nav.responsive li.twitter, ul.primary-nav.responsive li.search  {
 	 display: none;
