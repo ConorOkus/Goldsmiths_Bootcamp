@@ -1,6 +1,6 @@
 <?php
 
-$required = ['name', 'email', 'phonenumber'];
+$required = array('name', 'email', 'phonenumber');
 
 // Check $_POST Array
 foreach ($_POST as $key => $value) {
@@ -29,12 +29,9 @@ if (!in_array($email, $missing)) {
 if (!$errors && !$missing) {
 	require_once __DIR__ . '/config.php';
 	
-//set up replacements for decorator plugin
-$replacements = [
-    $email =>
-        ['#subject#' => 'Confirmation of Goldsmiths Bootcamp Registration',
-         '#name#' => "$name"]
-];
+$replacements = array(
+				$email => array('#subject#' => 'Confirmation of Goldsmiths Bootcamp Registration',
+         		'#name#' => "$name"));
 
 	try {
 		
@@ -155,7 +152,7 @@ EOT;
 	
 	// initialize emails to track the emails
 	$sent = 0;
-	$failures = [];
+	$failures = array();
 	
 	// send the message 
 	foreach ($replacements as $recipient => $values) {
